@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;k20230825_1_calendar_Lunar&apos;&#x0D;&#x0A;- Original project: &apos;k20230825_1_calendar_Lunar&apos;&#x0D;&#x0A;- Original element: &apos;jsoup-1.16.1.zip&apos;" description="Delete element" element1="src/main/webapp/WEB-INF/lib/jsoup-1.16.1.zip" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1692930385551" subPackages="false" version="1.0"/>
-</session>

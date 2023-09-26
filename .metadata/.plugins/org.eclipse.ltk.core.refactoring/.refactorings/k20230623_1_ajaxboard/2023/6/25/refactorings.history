@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;k20230623_1_ajaxboard&apos;&#x0D;&#x0A;- Original project: &apos;k20230623_1_ajaxboard&apos;&#x0D;&#x0A;- Original element: &apos;KakaoTalk_20230517_123905594.png&apos;" description="Delete element" element1="src/main/webapp/images/KakaoTalk_20230517_123905594.png" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1687504676388" subPackages="false" version="1.0"/>
-</session>
