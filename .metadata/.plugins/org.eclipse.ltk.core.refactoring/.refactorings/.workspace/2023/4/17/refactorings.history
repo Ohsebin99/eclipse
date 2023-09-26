@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;k20230501&apos; to &apos;k20230501_1_onLinePoll&apos;" description="Rename resource &apos;k20230501&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/k20230501" name="k20230501_1_onLinePoll" stamp="1682662881184" updateReferences="true"/>
+</session>

@@ -1,0 +1,13 @@
+package com.tjoeun.mycalendar;
+
+public class LunarDate {
+	
+	   private int year; // 양력 년
+	   private int month; // 양력 월
+	   private int day; // 양력 일
+	   private int yearLunar; // 음력 년
+	   private int monthLunar; // 음력 월
+	   private int dayLunar; // 음력 일
+	   private boolean lunarFlag; // 윤달 여부를 기억하는 변수
+	   private String holiday = ""; // 공휴일을 기억하는 변수
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배경</title>
+
+<style type="text/css">
+
+	/*
+		단축 속성
+		background: 배경색 배경이미지 반복방법 위치 스크롤특성;
+		background: yellowgreen url("./images/android.png") no-repeat bottom right scroll; // 모두 사용
+		background: url("./images/android.png") no-repeat right 100px; // 배경이미지, 반복방법, 위치
+		background: yellowgreen; // 배경색
+		
+		개별 속성
+		background-color: 배경색, transparent(투명)이 기본값
+		background-image: url("배경이미지")
+			=> none이 기본값
+			=> 배경 이미지 삽입시 요소의 크기가 설정되어있어야 이미지가 보인다.
+			=> 2개 이상의 배경 이미지를 삽입할 경우 ","로 구분하면 되고 먼저 삽입된 이미지가 더 위에 쌓인다.
+		background-repeat: 배경 이미지 반복 설정, repeat가 기본값
+			=> repeat: 기본값, 배경 이미지를 수직, 수평 방향으로 반복해서 표시한다.
+			=> repeat-x: 배경 이미지를 수평 방향으로 반복해서 표시한다.
+			=> repeat-y: 배경 이미지를 수직 방향으로 반복해서 표시한다.
+			=> no-repeat: 배경 이미지를 반복해서 표시하지 않는다. 1번만 표시한다.
+		background-position: 배경 영역 내부에서 배경 이미지의 위치, x축(0%), y축(0%)이 기본값
+	*/
+	
+	.box1 {
+		width: 200px;
+		height: 100px;
+		/* background-color: hotpink; */
+		background: yellowgreen;
+	}
+	
+	.box2 {
+		width: 96px;
+		height: 96px;
+		/* 배경색 위에 배경 이미지가 올라가므로 이미지 크기와 배경 영역의 크기가 같으면 배경색은 의미가 없다. */
+		/* background-color: hotpink; */
+		/* background-image: url("./images/java.png"), url("./images/jumbotronBackground.jpg"); */
+		background: hotpink url("./images/java.png");
+	}
+	
+	.box3 {
+		width: 192px;
+		height: 192px;
+		/* background-color: hotpink; */
+		/* background-image: url("./images/android.png"); */
+		/* background-repeat: repeat;를 제외하고 설정하면 배경 크기보다 이미지 크기가 작으면 배경색이 나타난다. */
+		/* background-repeat: no-repeat; */
+		background: hotpink url("./images/c.png") no-repeat;
+	}
+
+	.box4 {
+		width: 384px;
+		height: 384px;
+		border: 3px solid gray;
+		background-repeat: no-repeat;
+		background-image: url("./images/android.png");
+		/* background-position: 0% 0%; */ /* 기본값 */ /* top left */
+		/* background-position: 100% 100%; */ /* bottom right */
+		/* background-position: 50% 50%; */
+		/* background-position: 50% bottom; */
+		background-position: 10px 50px;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+
+</body>
+</html>

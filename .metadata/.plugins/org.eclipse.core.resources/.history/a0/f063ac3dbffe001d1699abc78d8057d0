@@ -1,0 +1,63 @@
+$(() => {
+
+//	조회할 사원 번호를 얻어온다.
+	$('#emp_search').click(function () {
+		let empid = $('input:text[name=empid]').val();
+		console.log(empid);
+	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

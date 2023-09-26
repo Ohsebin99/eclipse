@@ -1,0 +1,19 @@
+package com.tjoeun.mycalendar;
+
+public class SolaToLunar {
+	
+//	월별 양력과 음력을 크롤링하고 양력, 음력 공휴일을 계산해서 리턴하는 메소드
+	public static void solaToLunar(int year, int month) {
+		
+		String targetSite = "";
+		
+		// 인수로 넘겨받은 year에 해당되는 열두 달의 양력에 대응되는 음력을 크롤링
+		for(int i=1; i<=12; i++) {
+			targetSite = 
+				String.format("https://astro.kasi.re.kr/life/pageView/5?search_year=%04d&search_month=%02d&search_check=J",
+						year, i);
+				System.out.println(targetSite);
+		}
+	}
+	
+}

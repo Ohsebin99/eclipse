@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>트랜스폼 변환 속성</title>
+
+<style type="text/css">
+
+	/* 
+		transform 변환 속성
+		
+		backface-visibility: 3D 변환으로 회전되는 요소의 뒷면 숨김을 설정한다.
+			=> visible: 기본값, 뒷면을 보여준다.
+		transform-origin: 요소 변환의 기준점을 설정한다.
+			=> x축: 50%가 기본값
+			=> y축: 50%가 기본값
+			=> x축 y축 순서로 지정해야 하고 z축을 지정하면 효과가 적용되지 않는다.
+		transform-style: 3D 변환 요소의 자식 요소도 3D변환을 사용할지 여부를 지정한다.
+			=> flat: 기본값
+		perspective: 하위 요소를 관찰하는 원근 거리를 설정한다.
+	 */
+	
+	.img {
+	 	width: 300px;
+	 	border: 2px solid red;
+	 	margin: 50px;
+	 	transition-duration: 5s;
+	 	
+	 	backface-visibility: hidden;
+	 	transform-origin: 100% 100%;
+	 }
+	 
+	 .img:hover {
+	 	transform: rotateZ(18000deg);
+	 }
+	 
+	 .perspective {
+	 	width: 300px;
+	 	padding: 70px;
+	 	perspective: 1000px;
+	 }
+	 
+	 .grand-parent {
+	 	width: 300px;
+	 	border: 3px solid green;
+	 	transition-duration: 5s;
+	 }
+	 
+	 .grand-parent:hover {
+	 	transform: rotateZ(1800deg);
+	 }
+	 
+	 .parent {
+	 	width: 300px;
+	 	border: 3px solid blue;
+	 	transition-duration: 5s;
+	 	transform-style: preserve-3d;
+	 }
+	 
+	 .parent:hover {
+	 	transform: rotateY(1800deg);
+	 }
+	 
+	 .child {
+	 	width: 300px;
+	 	border: 3px solid skyblue;
+	 	transition-duration: 5s;
+	 }
+	 
+	 .child:hover {
+	 	transform: rotateX(1800deg);
+	 }
+	
+</style>
+
+</head>
+<body>
+
+<img class="img" alt="dd" src="./images/android.png"/>
+
+<div class="perspective">
+	<div class="grand-parent">
+		<div class="parent">
+			<img class="child" alt="자바" src="./images/java.png"> 
+		</div>
+	</div>
+	
+	
+</div>
+
+</body>
+</html>

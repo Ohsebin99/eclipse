@@ -1,0 +1,102 @@
+$(() => {
+
+//	조회할 사원 번호를 얻어온다.
+	$('#emp_search').click(function () {
+		let empid = $('input:text[name=empid]').val();
+		console.log(empid);
+		//	3자리 숫자만 입력받는다.
+		// isNaN(): 인수로 지정된 내용이 숫자가 아니면 true, 숫자면 false를 리턴한다.
+		if(!isNaN(empid) && empid.length == 3) {
+			console.log('ddd');
+			
+//	=======	jQuery Ajax =================================================================
+
+			$.ajax({
+				url: 'emplist.xml', // 필수, 호출할 페이지 주소(요청) 또는 읽어올 xml 파일명
+				cache: false, // 사용자 캐시 사용 여부 
+				method: 'get', // 필수, 서버에 데이터를 요청하는 방식
+				asyn: true, // 필수, 비동기 방식 사용 여부(false는 동기 방식)
+				dataType: 'xml', // 전송받는 데이터 타입(xml, json, html, script)
+				data: { // method가 post로 지정된 경우 서버로 전송할 데이터 목록
+					'key':'value'
+				},
+				// success는 Ajax 요청이 성공했을 때 실행할 콜백 함수
+				// Ajax 요청이 성공하면 응답받는 데이터가 콜백 함수의 인수로 넘어온다.
+			//	success: function (data) { } // 필수
+				succecc: function (data) {
+					console.log('요청 성공');
+					console.log(data);
+				},
+				// error는 Ajax 요청이 실패했을 때 실행할 콜백 함수
+				// Ajax 요청이 실패하면 콜백 함수의 인수로 오류 정보가 넘어온다.
+//				error: function (e) { }
+				error: function (e){
+					console.log('요청 실패');
+					console.log(e.status);
+				}
+			});
+
+//	=======	jQuery Ajax =================================================================
+			
+		}else {
+			alert('정확한 사원 번호를 입력하셈');
+			$('input:text[name=empid]').val('');
+			$('input:text[name=empid]').focus();
+		}
+	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

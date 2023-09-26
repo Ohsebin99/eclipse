@@ -1,0 +1,4 @@
+function idSerch(){
+	let serchName = $('input[name=serchName]').val()
+	let serchJumin = $('input[name=serchJumin]').val()
+}

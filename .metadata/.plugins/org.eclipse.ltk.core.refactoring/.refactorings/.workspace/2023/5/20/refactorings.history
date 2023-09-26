@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;k20230515&apos; to &apos;k20230515_1_javascript&apos;" description="Rename resource &apos;k20230515&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/k20230515" name="k20230515_1_javascript" stamp="1684130197196" updateReferences="true"/>
+</session>

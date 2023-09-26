@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>트랜지션</title>
+
+<style type="text/css">
+
+	/* 
+		단축 속성
+		transition: css 속성의 사작과 끝을 지정하여 애니메이션(전환) 효과를 낸다.
+		
+		
+		개별 속성
+		transition-duration: 애니메이션 효과의 지속 시간을 지정한다.
+			=> 0s이 기본값이고 애니메이션 효과 없음을 의미한다. => 바로 전환된다.
+			=> 애니메이션 효과 시간은 초 단위로 지정하려면 1초는 1s로 입력하고, 밀리초 단위로 지정하려면
+			   1초는 1000ms로 입력한다.
+		transition-timing-function: 타이밍(easing) 함수로 애니메이션 효과를 표현하는 방법을 지정한다.
+			=> ease: 기본값, 빠르게 - 느리게
+			=> linear: 일정하게
+			
+		transition-property: 애니메이션 효과를 사용할 속성을 설정한다.
+			=> all: 기본값, 모든 속성에 애니메이션 효과를 적용한다.
+			=> 
+	 */
+	
+	.box {
+		width: 100px;
+		height: 100px;
+		background-color: tomato;
+		margin: 50px;
+		
+	 	transition-property: width;
+		
+		transition-duration: 1s; /* transition-duration: 1000ms과 같다. */
+		transition-delay: 1s; 
+ 	}
+	
+	.box:hover {
+		width: 300px;
+		background-color: blue;
+	}
+	
+</style>
+
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>

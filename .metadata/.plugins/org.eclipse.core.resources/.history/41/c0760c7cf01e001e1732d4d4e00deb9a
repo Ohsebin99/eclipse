@@ -1,0 +1,13 @@
+function idSerch(){
+	let serchName = $('input[name=serchName]').val().trim();
+	let serchJumin = $('input[name=serchJumin]').val().trim();
+	
+	if(serchName.lgnth == 0 || serchName == ''){
+		alert('이름을 입력하세요');
+		return false;
+	}
+	if(serchJumin == ''){
+		alert('주민번호를 입력하세요');
+		return false;
+	}
+}

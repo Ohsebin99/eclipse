@@ -1,0 +1,35 @@
+function idSerch(){
+	let serchName = $('input[name=serchName]').val();
+	let serchJumin1 = $('input[name=serchJumin1]').val();
+	let serchJumin2 = $('input[name=serchJumin2]').val();
+	
+	let serchJumin = serchJumin1 + serchJumin2;
+	
+	if(serchName.length == 0 || serchName == ''){
+		alert('이름을 입력하세요');
+		return false;
+	}
+	if(serchJumin == ''){
+		alert('주민번호를 입력하세요');
+		return false;
+	}
+	
+	if(isNaN(serchJumin1) || isNaN(serchJumin2)) {
+		$('#messageContent').html('잘못된 주민등록번호 입니다.');
+		$('#messageModal').modal('show');
+		return false
+	}
+	
+	let sum = 0;
+	for (let i=0; i<12; i++){
+		sum += jumin.charAt(i) * (i % 8 + 2);
+	}
+	
+	let result = (11 - sum % 11) % 10;
+	
+	if(result != jumin.charAt(12)) {
+		$('#messageContent').html('잘못된 주민등록번호 입니다.');
+		$('#messageModal').modal('show');
+		return false;
+	}
+}

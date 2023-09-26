@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/passwordChange.js"></script>
+<script type="text/javascript" src="../common/jquery-3.7.0.js"></script>	
+</head>
+<body>
+
+<form action="passwordSerchOK.jsp" method="post" onsubmit="return passwordChange()">
+	<input type="text" placeholder="변경할 비밀번호" name="password"/><br/>
+	<input type="text" placeholder="비밀번호 확인" name="password2"/><br/>
+	<input type="submit" value="비밀번호 변경"/>
+</form>
+
+</body>
+</html>

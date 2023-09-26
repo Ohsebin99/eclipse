@@ -1,0 +1,19 @@
+table#table {
+	/* 셀 사이의 빈 여백을 없애고 합쳐진다. */
+	border-collapse: collapse;
+}
+
+tr.tr{
+	height: 50px;
+	
+}
+th.th{
+	background-color: green;
+	width: 150px;
+	border: 2px solid red;
+}
+td.td{
+	background-color: yellowgreen;
+	width: 100px;
+	border: 2px dashed red;
+}

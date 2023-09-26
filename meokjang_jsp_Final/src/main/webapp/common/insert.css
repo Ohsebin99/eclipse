@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.noUi-connect{
+		background-color: red;
+	}
+	.noUi-touch-area{
+		width: 10px;
+		height: 10px;
+	}
